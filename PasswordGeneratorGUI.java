@@ -28,6 +28,8 @@ public class PasswordGeneratorGUI extends Application {
         passwordField.setEditable(false);
         generateButton = new Button("Generate");
         generateButton.setOnAction(event -> passwordField.setText(passwordGeneratorApp.getGeneratedPassword(passwordField.getText()).toString()));
+        generateButton.setStyle("-fx-background-color: #00ff00; -fx-text-fill: white; -fx-font-size: 14px;");
+        
 
         // Password strength checking controls
         strengthLabel = new Label("Strength:");
